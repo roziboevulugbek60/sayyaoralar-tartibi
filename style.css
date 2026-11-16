@@ -1,0 +1,450 @@
+/* ======================================
+   🪐 SAYYORALAR TARTIBI
+   Developer: Ulug'bek.R
+====================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(
+        circle at top,
+        #312e81,
+        #020617
+    );
+
+    padding:15px;
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+.game{
+
+    width:100%;
+
+    max-width:500px;
+
+    min-height:650px;
+
+    background:
+
+    rgba(15,23,42,.9);
+
+    border-radius:30px;
+
+    padding:25px;
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.5);
+
+}
+
+
+
+
+
+
+
+header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+header h1{
+
+    font-size:32px;
+
+    color:#facc15;
+
+}
+
+
+
+header p{
+
+    color:#cbd5e1;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+
+.hidden{
+
+    display:none!important;
+
+}
+
+
+
+
+
+
+
+/* MENU */
+
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    font-size:17px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #f59e0b,
+    #ea580c
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+
+
+
+
+.record{
+
+    margin-top:20px;
+
+    background:#1e293b;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+
+
+/* GAME */
+
+
+.info{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    background:#1e293b;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#fde68a;
+
+}
+
+
+
+
+
+
+
+/* PLANETS */
+
+
+#planets{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    min-height:350px;
+
+}
+
+
+
+
+
+
+.planet{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#1e293b;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    cursor:grab;
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+
+
+.planet:hover{
+
+    transform:translateX(5px);
+
+    border-color:#facc15;
+
+}
+
+
+
+.planet:active{
+
+    cursor:grabbing;
+
+}
+
+
+
+
+
+.planet-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    background:#334155;
+
+}
+
+
+
+
+
+
+.planet-name{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+.correct{
+
+    border-color:#22c55e!important;
+
+    background:#14532d!important;
+
+}
+
+
+
+.wrong{
+
+    border-color:#ef4444!important;
+
+    background:#7f1d1d!important;
+
+}
+
+
+
+
+
+
+
+/* RESULT */
+
+
+#result{
+
+    text-align:center;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:25px;
+
+}
+
+
+
+#finalScore{
+
+    color:#facc15;
+
+    font-size:35px;
+
+}
+
+
+
+
+
+
+footer{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+@media(max-width:450px){
+
+
+    .game{
+
+        padding:18px;
+
+    }
+
+
+
+    header h1{
+
+        font-size:26px;
+
+    }
+
+
+
+    .planet-name{
+
+        font-size:17px;
+
+    }
+
+
+
+}
